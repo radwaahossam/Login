@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <form id="registerForm" class="signup">
+        <div class="container my-5 text-center">
+            <div class="inner m-auto p-5">
+                <h1 class="mb-3">Smart Login System</h1>
+
+                <input type="text" name="userName" class="form-control mb-3" id="Name" placeholder="Enter Your Name">
+                <input type="email" name="userEmail" class="form-control mb-3" id="Email" placeholder="Enter Your Email">
+                <input type="password" name="userPassword" class="form-control mb-3" id="Password" placeholder="Enter Password">
+
+                <div class="alert alert-danger d-none" id="nameAlert">Name must start with Uppercase <br> at least 3 characters</div>
+                <div class="alert alert-danger d-none" id="emailAlert">Enter a valid Email</div>
+                <div class="alert alert-danger d-none" id="passwordAlert">Password must contain at least 3 characters <br> At Least One Uppercase <br> At Least Special character </div>
+                <div class="alert alert-danger d-none" id="existAlert">This Email Already Exist</div>
+                <div class="alert alert-success d-none" id="successAlert">Success Registration</div>
+
+    
+                <button class="btn mt-3 p-2 w-100">Sign Up</button>
+                <p class="text mt-3 text-light">You have an account? 
+                    <a href="../signin/login.html" class="text-light">Sign in</a>
+                </p>
+            </div>
+        </div>
+    </form>
+   
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #24353f;
+}
+.inner{
+    box-shadow:  -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    width: 65%;
+}
+h1{
+    color: #17a2b8;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+}
+input#Name.form-control,#Password.form-control,#Email{
+    background-color: transparent;
+    border: 1px solid #ced4da;
+    color: #fff;
+}
+input.form-control::placeholder{
+    color: #ced4da;
+}
+.btn{
+    background-color: transparent;
+    border-color: #17a2b8;
+    color: #17a2b8;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #17a2b8;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <form id="loginForm" class="login">
+        <div class="container my-5 text-center">
+            <div class="inner m-auto p-5">
+                <h1 class="mb-3">Smart Login System</h1>
+
+                <input type="email" name="userEmail" class="form-control mb-3" id="loginEmail" placeholder="Enter Your Email">
+                <input type="password" name="userPassword" class="form-control mb-3" id="loginPassword" placeholder="Enter Password">
+
+                <div class="alert alert-danger d-none" id="loginEmailAlert">Enter a valid Email</div>
+                <div class="alert alert-danger d-none" id="loginPasswordAlert">Password must contain at least 3 characters <br> At Least One Uppercase <br> At Least Special character </div>
+                <div class="alert alert-danger d-none" id="faildLoginAlert">The User Not Found, please sign up</div>
+                <div class="alert alert-success d-none" id="loginsuccessAlert">You Are LoggedIn</div>
+
+    
+                <button class="btn mt-3 p-2 w-100">Login</button>
+                <p class="text mt-3 text-light">You have an account? 
+                    <a href="../signup/index.html" class="text-light">Sign up</a>
+                </p>
+            </div>
+        </div>
+    </form>
+   
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/login.js"></script>
+</body>
+</html>
